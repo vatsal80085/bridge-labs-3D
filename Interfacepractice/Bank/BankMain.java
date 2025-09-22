@@ -1,4 +1,4 @@
-package Interfacepractice;
+package Interfacepractice.Bank;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Interfacepractice;
+package Interfacepractice.Bank;
 
 class Bank_Service {
 

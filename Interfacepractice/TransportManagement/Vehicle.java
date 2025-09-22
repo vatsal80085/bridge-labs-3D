@@ -1,4 +1,4 @@
-package Interfacepractice;
+package Interfacepractice.TransportManagement;
 
 // FareCalculator Interface
 

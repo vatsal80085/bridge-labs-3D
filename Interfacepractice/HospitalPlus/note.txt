@@ -1,0 +1,52 @@
+2. HospitalPlus – Patient Management System
+Story: A hospital system tracks patients, doctors, and appointments.
+● Classes like Patient, Doctor, and Appointment use encapsulation to secure fields.
+● A constructor initializes patient objects with required details.
+● Only authorized roles can access certain data, implemented with access modifiers
+(private, protected, public).
+● A ReportGenerator interface is implemented by different report modules.
+Focus Concepts:
+● Encapsulation
+● Access Modifiers
+● Constructors
+● Interface implementation
+● UML class and sequence diagrams for patient registration
+
+UML Class Diagram
++----------------+        +----------------+         +-------------------+
+|    Patient     |        |     Doctor     |         |   Appointment     |
++----------------+        +----------------+         +-------------------+
+| - patientId    |        | - doctorId     |         | - appointmentId   |
+| - name         |        | - name         |         | - dateTime        |
+| - age          |        | - specialty    |         | - patient:Patient |
+| - contact      |        +----------------+         | - doctor:Doctor   |
++----------------+                ^                  +-------------------+
+| +getName()     |                |
+| +setContact()  |                |
++----------------+                |
+         ^                        |
+         |                        |
++----------------+        +-------------------+
+| ReportGenerator|<--------| AppointmentReport |
++----------------+        +-------------------+
+| +generateReport()        | +generateReport() |
++----------------+         +------------------+
+         ^
+         |
++----------------+
+| PatientReport  |
++----------------+
+| +generateReport()|
++-----------------+
+
+Sequence Diagram for Patient Registration
+User         UI Layer        HospitalSystem        Patient
+ |              |                  |                 |
+ |--register()-->                  |                 |
+ |              |--createPatient()-->               |
+ |              |                  |--new()-------->|
+ |              |                  |<--Patient Obj--|
+ |              |<--success msg----|                 |
+ |<--Confirmation------------------|                 |
+
+note to self -> format code in intellij using ctrl+alt+L
