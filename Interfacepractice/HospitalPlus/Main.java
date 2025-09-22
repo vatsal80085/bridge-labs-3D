@@ -15,7 +15,7 @@ public class Main {
         List<Doctor> doctors = new ArrayList<>();
         List<Appointment> appointments = new ArrayList<>();
 
-        // === Default Data ===
+        // Default Data
         Patient dp1 = new Patient("P001", "Rahul Verma", 30, "9876543210");
         Patient dp2 = new Patient("P002", "Sneha Sharma", 25, "9876501234");
         defaultPatients.add(dp1);
@@ -105,7 +105,7 @@ public class Main {
                     break;
 
                 case 4:
-                    System.out.println("\n=== Patients ===");
+                    System.out.println("\nPatients");
                     if (patients.isEmpty()) System.out.println("No patients registered.");
                     for (Patient p : patients) {
                         System.out.println(p.getPatientId() + " | " + p.getName() +
@@ -114,7 +114,7 @@ public class Main {
                     break;
 
                 case 5:
-                    System.out.println("\n=== Doctors ===");
+                    System.out.println("\nDoctors");
                     if (doctors.isEmpty()) System.out.println("No doctors added.");
                     for (Doctor d : doctors) {
                         System.out.println(d.getDoctorId() + " | " + d.getDoctorName() +
@@ -123,7 +123,7 @@ public class Main {
                     break;
 
                 case 6:
-                    System.out.println("\n=== Appointments ===");
+                    System.out.println("\nAppointments");
                     if (appointments.isEmpty()) System.out.println("No appointments scheduled.");
                     for (Appointment a : appointments) {
                         System.out.println(a.getAppointmentId() + " | Patient: " + a.getPatient().getName() +
@@ -140,17 +140,17 @@ public class Main {
                     break;
 
                 case 8:
-                    System.out.println("\n=== Default Patients ===");
+                    System.out.println("\nDefault Patients");
                     for (Patient p : defaultPatients) {
                         System.out.println(p.getPatientId() + " | " + p.getName() +
                                 " | Age: " + p.getAge() + " | Contact: " + p.getContact());
                     }
-                    System.out.println("\n=== Default Doctors ===");
+                    System.out.println("\nDefault Doctors");
                     for (Doctor d : defaultDoctors) {
                         System.out.println(d.getDoctorId() + " | " + d.getDoctorName() +
                                 " | Specialty: " + d.getSpecialty());
                     }
-                    System.out.println("\n=== Default Appointments ===");
+                    System.out.println("\nDefault Appointments");
                     for (Appointment a : defaultAppointments) {
                         System.out.println(a.getAppointmentId() + " | Patient: " + a.getPatient().getName() +
                                 " | Doctor: " + a.getDoctor().getDoctorName() +

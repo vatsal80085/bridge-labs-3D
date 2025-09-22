@@ -1,0 +1,12 @@
+3. LearnTrack – Online Course System
+Story: An EdTech company designs an app where teachers create courses and students enroll.
+● A base User class is extended by Student and Teacher.
+● Course class manages enrolled users using lists of objects.
+● Constructors allow flexibility in object creation.
+● CourseContentRenderer is an interface for different formats: Video, PDF, HTML.
+Focus Concepts:
+● Inheritance
+● Object creation
+● Interface
+● Constructor overloading
+● Class-object relationships
